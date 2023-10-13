@@ -4,7 +4,7 @@
   --c1: #009144;
   --c2: #000;
   --c3: #fff;
-  --c4: #9b9b9b;
+  --c4: #eaeaea;
 }
 
 * {
@@ -123,7 +123,7 @@ body {
 }
 
 .navbar .icon .search-form input::placeholder {
-  color: var(--c4);
+  color: #9b9b9b;
   text-align: center;
 }
 
@@ -142,65 +142,37 @@ body {
 
 /* Profil Main */
 main {
-  padding: 5rem 7% 1.4rem;
+  padding: 6rem 7% 1.4rem;
   text-align: center;
 }
 
 main h1 {
   font-size: 1.8rem;
-  margin-bottom: 1rem;
-}
-
-main h3 {
-  margin-bottom: 0.8rem;
 }
 
 main p {
-  margin-bottom: 3rem;
+  font-size: 1.2rem;
 }
 
-.profil h1 {
-  font-size: 2rem;
-  font-weight: 600;
-  color: var(--c2);
-  margin-bottom: 1rem;
+table {
+  width: 100%;
+  margin-top: 1.5rem;
+  border-collapse: collapse;
 }
 
-.profil .row {
-  display: flex;
-  margin-top: 2rem;
-  background-color: var(--c3);
-  align-items: center;
+th,
+td {
+  text-align: center;
+  padding: 1rem;
 }
 
-.profil .row img {
-  flex: 1 1 45rem;
-  width: 50%;
-  object-fit: cover;
+th {
+  background-color: var(--c1);
+  color: var(--c3);
 }
 
-.profil .row .prakata {
-  flex: 1 1 45rem;
-  padding: 2rem 3rem;
-  text-align: justify;
-}
-
-.profil .row .prakata h1 {
-  margin: 0;
-  font-size: 1.8rem;
-  font-weight: 600;
-  color: var(--c2);
-}
-
-.profil .row .prakata h2 {
-  font-size: 1.3rem;
-  font-weight: 500;
-  color: var(--c1);
-  margin-bottom: 0.8rem;
-}
-
-.profil .row .prakata p {
-  font-size: 1rem;
+tr:nth-child(odd) {
+  background-color: var(--c4);
 }
 
 /* Footer */
