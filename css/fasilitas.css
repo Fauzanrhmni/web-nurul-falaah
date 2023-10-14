@@ -4,7 +4,7 @@
   --c1: #009144;
   --c2: #000;
   --c3: #fff;
-  --c4: #eaeaea;
+  --c4: #9b9b9b;
 }
 
 * {
@@ -13,7 +13,7 @@
   box-sizing: border-box;
   outline: none;
   border: none;
-  list-style: none;
+  list-style-type: none;
   text-decoration: none;
 }
 
@@ -133,35 +133,26 @@ body {
   display: none;
 }
 
-/* Section Table */
-.table {
+/* Fasilitas Main */
+.fasilitas {
+  padding: 5rem 5% 1.4rem;
   text-align: center;
-  padding: 6rem 7% 1.4rem;
 }
 
-.table h1 {
-  font-size: 1.5rem;
+.fasilitas h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
 }
 
-table {
-  width: 100%;
-  margin-top: 2rem;
-  border-collapse: collapse;
+.fasilitas .galery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-th,
-td {
-  text-align: center;
-  padding: 1rem;
-}
-
-th {
-  background-color: var(--c1);
-  color: var(--c3);
-}
-
-tr:nth-child(odd) {
-  background-color: var(--c4);
+.fasilitas .galery img {
+  margin: 0.5rem;
+  width: 23%;
 }
 
 /* Footer */

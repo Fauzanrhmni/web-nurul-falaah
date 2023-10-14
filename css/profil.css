@@ -99,37 +99,30 @@ body {
 
 .navbar .icon {
   display: flex;
-
+  justify-content: center;
   align-items: center;
 }
 
 .navbar .icon .search-form {
   display: flex;
-  height: 2.5rem;
-  width: 12rem;
+  height: 3rem;
+  width: 13rem;
   background-color: var(--c1);
   padding: 0.6rem 1rem;
   border-radius: 5rem;
-  margin-right: 1rem;
-}
-
-.navbar .icon .search-form input {
-  height: 100%;
-  width: 100%;
-  font-size: 1rem;
-  background-color: var(--c1);
-  color: var(--c3);
-  text-align: center;
-}
-
-.navbar .icon .search-form input::placeholder {
-  color: var(--c4);
-  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .navbar .icon .search-form label {
   color: var(--c3);
+  font-size: 1.5rem;
+}
+
+.navbar .icon .search-form p {
   font-size: 1rem;
+  margin-left: 0.5rem;
+  color: var(--c3);
 }
 
 .navbar .icon .search-form label:hover {
