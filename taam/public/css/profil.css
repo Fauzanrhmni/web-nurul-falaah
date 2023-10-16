@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap");
+
+:root {
+  --c1: #009144;
+  --c2: #000;
+  --c3: #fff;
+  --c4: #9b9b9b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--c3);
+  color: var(--c2);
+}
+
+
+#menu {
+  display: none;
+}
+
+/* Profil Main */
+main {
+  padding: 5rem 7% 1.4rem;
+  text-align: center;
+}
+
+main h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+main h3 {
+  margin-bottom: 0.8rem;
+}
+
+main p {
+  margin-bottom: 3rem;
+}
+
+.profil h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--c2);
+  margin-bottom: 1rem;
+}
+
+.profil .row {
+  display: flex;
+  margin-top: 2rem;
+  background-color: var(--c3);
+  align-items: center;
+}
+
+.profil .row img {
+  flex: 1 1 45rem;
+  height: 30rem;
+  object-fit: cover;
+}
+
+.profil .row .prakata {
+  flex: 1 1 45rem;
+  padding: 2rem 3rem;
+  text-align: justify;
+}
+
+.profil .row .prakata h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--c2);
+}
+
+.profil .row .prakata h2 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--c1);
+  margin-bottom: 0.8rem;
+}
+
+.profil .row .prakata p {
+  font-size: 1rem;
+}
+
+/* Footer */
+footer {
+  background-color: var(--c1);
+  text-align: center;
+  padding: 1rem 0 2rem;
+  margin-top: 3rem;
+}
+
+footer .socials {
+  padding: 1rem 0;
+}
+
+footer .socials a {
+  color: var(--c3);
+  margin: 0.8rem;
+}
+
+footer .socials a:hover,
+footer .links a:hover {
+  color: var(--c2);
+}
+
+footer .links {
+  margin-bottom: 0.7rem;
+}
+
+footer .links a {
+  color: var(--c3);
+  padding: 0.7rem 1rem;
+}
+
+footer .credit {
+  color: var(--c3);
+  font-size: 0.8rem;
+}
+
+footer .credit a {
+  color: var(--c3);
+  font-weight: 700;
+}
+
+footer .credit a:hover {
+  color: var(--c2);
+}
+
+/* Media Quaries */
+
+/* Laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  #menu {
+    display: inline-block;
+  }
+
+  .navbar .ul-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: var(--c3);
+    width: 20rem;
+    height: 100vh;
+    transition: 0.3s;
+  }
+
+  .navbar .ul-nav.active {
+    right: 0;
+  }
+
+  .navbar .ul-nav .drop {
+    display: block;
+  }
+
+  .navbar .ul-nav .drop .drop-nav {
+    font-size: 1.2rem;
+  }
+
+  .isi-drop li a {
+    font-size: 1.2rem;
+  }
+
+  .profil .row {
+    display: block;
+  }
+
+  .profil .row img {
+    width: 100%;
+  }
+
+  .profil .row .prakata {
+    padding: 2rem 0;
+  }
+
+  .visi-misi p, .sejarah p {
+    text-align: justify;
+  }
+}
+
+/* Mobile Phone */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+
+  #menu {
+    display: inline-block;
+  }
+}

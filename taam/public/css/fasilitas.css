@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap");
+
+:root {
+  --c1: #009144;
+  --c2: #000;
+  --c3: #fff;
+  --c4: #9b9b9b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--c3);
+  color: var(--c2);
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 7%;
+  background-color: var(--c3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar img {
+  width: 3rem;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.navbar .ul-nav .drop {
+  float: left;
+}
+
+.navbar .ul-nav .drop .drop-nav {
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--c2);
+  padding: 14px 16px;
+}
+
+.navbar .ul-nav .drop a:hover,
+.navbar .ul-nav .drop .drop-nav .fa-solid:hover {
+  color: var(--c1);
+}
+
+.navbar .ul-nav .drop .drop-nav .fa-solid {
+  color: var(--c2);
+}
+
+.drop:hover .isi-drop {
+  display: block;
+}
+
+.isi-drop {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  display: none;
+  border-radius: 0.3rem;
+  z-index: 1;
+}
+
+.isi-drop li a {
+  padding: 10px 60px 10px 20px;
+  display: inline-block;
+  font-size: 0.8rem;
+  color: var(--c2);
+  width: 100%;
+  background-color: var(--c3);
+}
+
+.isi-drop li a:hover {
+  color: var(--c1);
+}
+
+.navbar .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar .icon .search-form {
+  display: flex;
+  height: 3rem;
+  width: 13rem;
+  background-color: var(--c1);
+  padding: 0.6rem 1rem;
+  border-radius: 5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar .icon .search-form label {
+  color: var(--c3);
+  font-size: 1.5rem;
+}
+
+.navbar .icon .search-form p {
+  font-size: 1rem;
+  margin-left: 0.5rem;
+  color: var(--c3);
+}
+
+.navbar .icon .search-form label:hover {
+  transform: scale(1.2);
+}
+
+#menu {
+  display: none;
+}
+
+/* Fasilitas Main */
+.fasilitas {
+  padding: 5rem 5% 1.4rem;
+  text-align: center;
+}
+
+.fasilitas h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.fasilitas .galery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.fasilitas .galery img {
+  margin: 0.5rem;
+  width: 23%;
+}
+
+/* Footer */
+footer {
+  background-color: var(--c1);
+  text-align: center;
+  padding: 1rem 0 2rem;
+  margin-top: 3rem;
+}
+
+footer .socials {
+  padding: 1rem 0;
+}
+
+footer .socials a {
+  color: var(--c3);
+  margin: 0.8rem;
+}
+
+footer .socials a:hover,
+footer .links a:hover {
+  color: var(--c2);
+}
+
+footer .links {
+  margin-bottom: 0.7rem;
+}
+
+footer .links a {
+  color: var(--c3);
+  padding: 0.7rem 1rem;
+}
+
+footer .credit {
+  color: var(--c3);
+  font-size: 0.8rem;
+}
+
+footer .credit a {
+  color: var(--c3);
+  font-weight: 700;
+}
+
+footer .credit a:hover {
+  color: var(--c2);
+}
+
+/* Media Quaries */
+
+/* Laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  #menu {
+    display: inline-block;
+  }
+
+  .navbar .ul-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: var(--c3);
+    width: 20rem;
+    height: 100vh;
+    transition: 0.3s;
+  }
+
+  .navbar .ul-nav.active {
+    right: 0;
+  }
+
+  .navbar .ul-nav .drop {
+    display: block;
+  }
+
+  .navbar .ul-nav .drop .drop-nav {
+    font-size: 1.2rem;
+  }
+
+  .isi-drop li a {
+    font-size: 1.2rem;
+  }
+}
+
+/* Mobile Phone */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+
+  #menu {
+    display: inline-block;
+  }
+}
