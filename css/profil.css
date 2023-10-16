@@ -168,7 +168,7 @@ main p {
 
 .profil .row img {
   flex: 1 1 45rem;
-  width: 50%;
+  width: 20rem;
   object-fit: cover;
 }
 
@@ -284,6 +284,18 @@ footer .credit a:hover {
 
   .isi-drop li a {
     font-size: 1.2rem;
+  }
+
+  .profil .row {
+    display: block;
+  }
+
+  .profil .row img {
+    width: 100%;
+  }
+
+  .profil .row .prakata {
+    padding: 2rem 0;
   }
 }
 
